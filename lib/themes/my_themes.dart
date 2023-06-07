@@ -2,9 +2,11 @@ import 'package:alurabank/themes/theme_colors.dart';
 import 'package:flutter/material.dart';
 
 ThemeData myTheme = ThemeData(
-  // cardColor: Colors.blueGrey,
   primarySwatch: ThemeColors.primaryColor,
   primaryColor: ThemeColors.primaryColor,
   brightness: Brightness.dark,
-  // fontFamily: ,
+  textTheme: const TextTheme(
+    bodyMedium: TextStyle(fontSize: 16),
+    bodyLarge: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+  ),
 );
