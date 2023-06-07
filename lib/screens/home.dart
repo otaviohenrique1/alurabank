@@ -1,6 +1,6 @@
-import 'package:alurabank/components/box_card.dart';
-import 'package:alurabank/components/sections/header.dart';
 import 'package:flutter/material.dart';
+import 'package:alurabank/components/sections/header.dart';
+import 'package:alurabank/components/sections/recent_activity.dart';
 
 void main() {
   runApp(const Home());
@@ -11,14 +11,11 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      // appBar: AppBar(toolbarHeight: 0),
-      body: const Column(
+    return const Scaffold(
+      body: Column(
         children: [
           Header(),
-          BoxCard(
-            boxContent: Text("Ola mundo"),
-          ),
+          RecentActivity(),
         ],
       ),
     );
